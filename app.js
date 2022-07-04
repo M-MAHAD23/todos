@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 require('dotenv/config')
-const port = 3000
+const port = process.env.PORT || 3000
 
 //IMPORT ROUTES
 const todosRoutes = require('./routes/todos');
